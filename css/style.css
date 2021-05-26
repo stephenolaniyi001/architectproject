@@ -1,0 +1,537 @@
+body {
+    overflow-x: hidden;
+}
+.image1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    animation: scale 24s linear;
+    transform: scaleY(1.4) scaleX(1);
+   /* transform: scaleY(1.4); */
+}
+.general1::before {
+    content: "";
+    background-color: rgba(28, 28, 32, 0.445);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ @keyframes scale {
+     0% {
+         transform: scaleY(1.6) scaleX(1.3);
+     }
+     100% {
+         transform: scaleY(1.4) scaleX(1);
+     }
+ }  
+
+.general1{
+    width: 100%;
+    height: 100vh;
+}
+.image1::before{
+    content: "";
+    background-color:rgb(26, 26, 29);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.text1{
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+
+.heading1{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.heading2{
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.link1{
+    color: white;
+    background-color: rgb(194, 133, 20);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    height: 5rem;
+    width: 17rem;
+}
+.link1:hover{
+    color: white;
+}
+/* .pt-5{ */
+    /* text-align: center; */
+/* } */
+.general2{
+    background-color: rgb(241, 237, 237);
+    position: relative;
+}
+.text1-center{
+    font-size: 15px;
+    font-family: "Josefin Slab", serif;
+    text-align: justify;
+}
+.image3{
+    width: 60%;
+}
+.container2{
+display: flex;
+justify-content: space-around;
+text-align: center;
+}
+.container3{
+    margin: auto;
+    width: 70%;
+}
+.underline{
+    width: 12rem;
+    height: 0.3rem;
+    background-color: #c29525;
+    margin: auto;
+    margin-top: 5rem;
+   }
+.general4{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 8rem;
+    width: 100%;
+    position: relative;
+}
+.container5{
+    width: 80%;
+    margin: auto;
+}
+.card{
+    width: 30%;
+    /* height: 45rem; */
+    box-shadow: 0 1rem  5rem rgb(26, 26, 29);
+}
+.card-image ::before{
+ content: "";
+background-color: rgba(28, 28, 32, 0.445);
+height: 100%;
+width: 100%;
+position: absolute;
+left: 0;
+top: 0;
+}
+.card-image{
+    width: 100%;
+    height: 100%;
+}
+.image5{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #262626;
+    border-radius: 0.5rem;
+    opacity: 0.8rem;
+}
+.card-info{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.card:hover .card-info{
+    bottom: 1rem;
+    opacity: 1;
+    visibility: visible;
+}
+.card-info h2{
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: #eee;
+}
+.card-info h3{
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #a52a2a;
+    margin-bottom: irem;
+}
+.card-info p{
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    color: #eee;
+    margin-bottom: 2rem;
+}
+.card-info button{
+    width: 10rem;
+    height: 3rem;
+    background-color: #c29525;
+    border: none;
+    /* font-size: 1.5rem; */
+    line-height: 1.5rem;
+    color: #eee;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.8rem rgba(0,0,0,0.4);
+}
+.contact {
+    width: 100%;
+    background-color:red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+  .general6{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.5);
+  }
+  .contact-left {
+    width: 30%;
+    height: 43rem;
+    background-image: url(../image/contact-bg.jpg);
+    background-size: cover;
+  }
+  .contact-right {
+    width: 30%;
+    background-color: #eee;
+  }
+ .contact-heading {
+    font-family: "Baloo Da 2", serif;
+    font-size: 2.9rem;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+   }
+   .contact-right form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-group {
+    position: relative;
+  }
+  .input-group{
+      position: relative;
+  }
+  .field {
+    width: 20rem;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2rem dashed #636363;
+    margin: 0rem 0;
+    font-family: "Muli", serif;
+    color: #4b4b4b;
+    outline: none;
+  }
+  .input-label {
+      position: absolute;
+      z-index: 0;
+      margin-bottom: 0;
+    bottom: .4rem;
+    display: block !important;
+    transition: .6s;
+  }
+  .input-label2 {
+    z-index: 0;
+    margin-bottom: 0;
+    display: block;
+    position: absolute;
+    bottom: .4rem;
+    font-size: 1rem;
+    transition: .6s;
+  }
+  .submit-btn {
+    width: 15rem;
+    height: 3rem;
+    background-color: #c29525;
+    color: #fff;
+    border: none;
+    margin-top: 1rem;
+    font-family: "Muli", serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  }
+  .input-label:hover {
+      /* color: yellow; */
+  }
+  .field:focus ~ .input-label, .field:not(:placeholder-shown) ~ .input-label {
+    transform: translateY(-1rem);
+    font-size: .8rem;
+  }
+  textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2rem dashed #636363;
+    width: 20rem;
+position: relative;
+z-index: 1;
+margin: 0rem 0;
+font-family: "Muli", serif;
+color: #4b4b4b;
+outline: none;
+  }
+  textarea:focus ~ .input-label2, textarea:not(:placeholder-shown) ~ .input-label2 {
+      transform: translateY(-3rem);
+    font-size: .8rem;
+  }
+  .footer {
+    width: 100%;
+    height: 10rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copywright{
+      color: white;
+  }
+
+  /* media query */
+  @media (max-width: 700px){
+    body{
+        /* background-color: red !important; */
+    }
+    .image1{
+     width: 100%;
+    }
+
+    .text1{
+        font-size: 5px;
+    }
+    .heading1{
+        font-size: 25px;
+        position: relative;
+        right: 90px;
+        bottom: 140px;
+    }
+    .heading2{
+        font-size: 20px;
+        position: relative;
+        right: 90px;
+        bottom: 140px;
+    }
+    .link1{
+        position: relative;
+        right: 90px;
+        bottom: 140px;
+        width: 10rem;
+        height: 2rem;
+    }
+    .text1-center{
+        font-size: 18px;
+        text-align: center;
+    }
+    .image3{
+        position: absolute;
+        bottom: 0;
+        width: 30%;
+        left: 250px;
+    }
+    .general2{
+        padding-bottom: 10rem;
+    }
+    .card-info h2{
+        font-size: 15px;
+    }
+    .card-info h3{
+        font-size: 12px;
+    }
+    .card-info p{
+        font-size: 15px;
+    }
+    .card-info button{
+        width: 60%;
+    }
+    .card-info{
+        position: absolute;
+        top: 40px;
+    }
+    .input-label{
+        margin-left: 15px;
+    }
+    .field{
+        width: 12rem;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+    }
+    .general4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image5{
+        width: 100%;
+        height: 400px;
+
+    }
+    .card-image{
+        width: 100%;
+        height: 100%;
+    }
+    .card{
+        width: 70%;
+        margin-top: 30px;
+    }
+        
+        
+  }
+  @media (max-width: 1000px){
+    .heading1{
+        position: relative;
+        bottom: 150px;
+        right: 50px;
+    }
+    .heading2{
+        position: relative;
+        bottom: 150px;
+        right: 50px;
+    }
+    .link1{
+        position: relative;
+        bottom: 150px;
+        right: 50px;
+    }
+    .image3{
+        position: absolute;
+        bottom: 0;
+        width: 30%;
+        left: 350px;
+        
+    }
+    .general2{
+        padding-bottom: 14rem;
+    }
+    .card-info h2{
+        font-size: 13px;
+    }
+    .card-info h3{
+        font-size: 13px;
+    }
+    .card-info{
+        position: absolute;
+        top: -10px;
+    }
+    .card-info button{
+        position: absolute;
+        bottom: -10px;
+    }
+    @media (max-width: 500px){
+        .heading1{
+            font-size: 25px;
+            position: relative;
+            right: 200px;
+        }
+        .heading2{
+            font-size: 20px;
+            position: relative;
+            right: 200px;
+        }
+        .link1{
+            position: relative;
+            right: 200px;
+            height: 50px;
+        }
+        .image3{
+            margin-left: -166px;
+        }
+    }
+@media (min-width: 360px){
+    .text1{
+        position: absolute;
+        left: 204px;
+    }
+    .heading1{
+        position: relative;
+        left: -150px;
+        font-size: 20px;
+        top: 30px;
+    }
+    .heading2{
+        position: relative;
+        left: -150px;
+        font-size: 30px;
+        top: 30px;
+    }
+    .link1{
+        width: 100%;
+        height: 3rem;
+        position: relative;
+        left: -150px;
+        font-size: 15px;
+        top: 30px;
+    }
+    .text1-center{
+        font-size: 15px;
+    }
+    .image3{
+        margin-left: -250px;
+        padding-bottom: 25px;
+        width: 50%;
+    }
+    .contact-right{
+        width: 100%;
+    }
+    .contact-heading{
+        font-size: 20px;
+    }
+    .submit-btn{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+    .contact-left{
+        display: none;
+    }
+    .contact{
+        background-color: lightgray;
+    }
+}
+@media (min-width: 414px){
+    .heading1{
+        font-size: 25px;
+        top: 40px;
+    }
+    .heading2{
+        font-size: 30px;
+        top: 40px;
+    }
+    .link1{
+        top: 40px;
+    }
+    .text1-center{
+        font-size: 16px;
+    }
+    textarea{
+        width: 200px;
+    }
+}
+
+  
+  
+  
+  
+
+
+
